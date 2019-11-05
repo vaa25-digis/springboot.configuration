@@ -15,16 +15,21 @@ public class Config {
     private String mysqlOverridden;
     @Value("${elasticsearch.property}")
     private String elasticsearch;
+    @Value("${java.home}")
+    private String javaHome;
     @Autowired
     private Environment environment;
+//    @Autowired
+//    private MysqlProperties mysqlProperties;
 
     @Bean
-    public Void run(final MysqlProperties mysqlProperties){
+    public Void run(){
         System.out.println(mysql);
         System.out.println(mysqlOverridden);
         System.out.println(elasticsearch);
-        System.out.println(mysqlProperties.property());
-        System.out.println(mysqlProperties.overriddenProperty());
+//        System.out.println(mysqlProperties.property());
+//        System.out.println(mysqlProperties.overriddenProperty());
+        System.out.println(javaHome);
         System.out.println(environment.getProperty("java.home"));
 
         return null;
