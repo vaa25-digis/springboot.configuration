@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-//@EnableConfigurationProperties(MysqlProperties.class)
+@EnableConfigurationProperties(MysqlProperties.class)
 public class MyApplication {
 
     public static void main(String[] args) {

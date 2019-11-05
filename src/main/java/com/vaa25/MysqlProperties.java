@@ -20,4 +20,12 @@ public class MysqlProperties {
     public String overriddenProperty() {
         return overriddenProperty;
     }
+
+    public void setProperty(final String property) {
+        this.property = property;
+    }
+
+    public void setOverriddenProperty(final String overriddenProperty) {
+        this.overriddenProperty = overriddenProperty;
+    }
 }
